@@ -23,9 +23,6 @@ const multiply = (x, y) => {
 //two parameters: a. an operator b. two numbers
 //get user input
 let substractText = document.querySelector(".substract").textContent;
-//get user input, if a user clicks on the minus button or the plus or
-//div or mult value then we create a dynamic div and paragraph and then append the content of the user input
-//and get the content and store it in an array
 
 let userDigitsArraySetOne = [];
 let userOperatorVale = [];
@@ -71,27 +68,6 @@ buttons.forEach((elements) => {
         userDigitsArraySetOne = [];
         user_selection_one.textContent = "";
       });
-
-      // if (user_selection_one.textContent == operationValue) {
-      //   operationValue = elements.textContent;
-      //   userDigitsArraySetOne.push((operationValue += elements.textContent));
-      //   user_selection_one.textContent = eval(
-      //     (operationValue += elements.textContent)
-      //   );
-      // }
-
-      // if (elements.getAttribute("class") === "equal-to") {
-      //   elements.addEventListener("click", function () {
-      //     user_selection_one.textContent = operationValue;
-      //   });
-      // }
-      console.log(operationValue);
-      // // paraText.textContent = elements.textContent;
-      // // paraText.style.fontSize = "50px";
-      // // paraText.style.fontWeight = "300";
-      // displaysection.appendChild(paraText);
-
-      console.log(userDigitsArraySetOne);
     });
   }
 });
